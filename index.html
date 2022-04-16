@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Введите логин
+        <input type="text" id="login" name="login" size="10"><br>
+        Введите пароль
+        <input type="text" id="password" name="password" size="10"><br>
+        Введите email
+        <input type="text" id="email" name="email" size="10">
+    </p>
+    
+    
+    <p>
+        <label for="first"> Подписаться на рассылку</label><br>
+        <input class="checkbox" type="checkbox" id="mailing" value="может так">
+    </p>
+    
+    
+    <p>
+        Пол
+    </p>
+        <input type="radio" name="answer" value="man" checked='true'/>Мужской<br />
+        <input type="radio" name="answer" value="woman" />Женский<br />
+    </p>
+
+
+    <select name="city_ru" id="city_ru">
+        <option value="work" selected>Москва</option>
+        <option value="education">Питер</option>
+        <option value="another">Сывтывкар</option>
+    </select>
+
+    <div>
+    <button onclick="alertAnswers()">Отправить данные</button>
+    <button onclick="clearAnswers()">Сбросить</button>
+    </div>
+        
+    <div id="answer">
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
