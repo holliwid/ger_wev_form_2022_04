@@ -13,7 +13,7 @@ function alertAnswers(){
 
 
 
-
+    //формирование ответа текста
     if(gender == 'man')
         text="<h3>Уважаемый "
     else text="Уважаемая "
@@ -23,11 +23,12 @@ function alertAnswers(){
         text = text + "Информация будет отправлена на адрес: " + email + "<br>"
     
     text = text + "Будем рады видеть Вас в нашем офисе в " + city_ru
-
+    
+    // вставка текста в сущесвующий div
     document.getElementById('answer').innerHTML = text;
 }
 
-
+// очистка полей
 function clearAnswers(){
     const login = document.getElementById('login').value = ""
     const password = document.getElementById('password').value = ""
